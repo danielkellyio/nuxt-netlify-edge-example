@@ -19,6 +19,5 @@ export default defineEventHandler((event) => {
     site: netlifyContext?.site ?? null,
     server: netlifyContext?.server ?? null,
     requestId: netlifyContext?.requestId ?? null,
-    context: netlifyContext,
   };
 });
