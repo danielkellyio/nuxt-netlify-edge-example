@@ -4,6 +4,14 @@ Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduct
 
 ## Setup
 
+### Netlify Edge Geo API example
+
+- Server endpoint: `/api/geo`
+- Returns `geo` and `ip` from Netlify Edge context when deployed on Netlify Edge Functions, per the Edge Functions API docs.
+- Disable caching for this endpoint via `routeRules`.
+
+To run on Edge Functions on Netlify, set the environment variable `SERVER_PRESET=netlify_edge` for your deploy/build, as described in Nuxt's Netlify docs.
+
 Make sure to install dependencies:
 
 ```bash
